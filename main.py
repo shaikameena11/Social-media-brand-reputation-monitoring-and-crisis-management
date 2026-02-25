@@ -18,6 +18,7 @@ from nltk.stem import SnowballStemmer
 # --- INITIALIZATION ---
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('punkt_tab')
 
 st.set_page_config(page_title="Brand Reputation Dashboard", layout="wide")
 
@@ -302,4 +303,5 @@ elif selection == "🔥 Brand Crisis Detection":
             display_cols = list(dict.fromkeys([prod_ref, st.session_state.plat_col, st.session_state.text_col]))
             st.dataframe(critical[display_cols], use_container_width=True)
         else: st.info("🔍 No high-risk keywords found.")
+
     else: st.warning("Upload data first.")
