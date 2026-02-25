@@ -4,3 +4,4 @@ nltk
 tensorflow
 collections
 re
+scikit-learn
