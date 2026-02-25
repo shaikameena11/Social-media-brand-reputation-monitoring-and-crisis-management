@@ -2,6 +2,5 @@ plotly
 wordcloud
 nltk
 tensorflow
-collections
 re
 scikit-learn
